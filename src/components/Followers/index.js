@@ -9,7 +9,7 @@ export default function Following(props) {
             {
                 user ? (
                     show ? (
-                        followers ? (
+                        followers.length ? (
                             <div className="card-container followers">
                                 <div className="followers_header">
                                     <h4 onClick={handleShowMore}>Show More</h4>
@@ -24,7 +24,7 @@ export default function Following(props) {
                                 }
                             </div>
                         ) : (
-                                <div className="card-container">
+                                <div className="card-container followers">
                                     <div className="followers_header">
                                         <h4>0 Followers</h4>
                                     </div>
